@@ -688,6 +688,11 @@ section {
   transform: scale(0.94);
 }
 
+.project-card:nth-child(7) {
+  z-index: 7;
+  transform: scale(0.94);
+}
+
 /* ================= MAC HEADER ================= */
 
 .project-card .mac-header {
@@ -742,6 +747,24 @@ section {
     inset 0 0 0 1px rgba(255,255,255,.08);
 
   overflow: hidden;
+}
+
+.project-preview {
+  width: 100%;
+  height: 180px; 
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  transition: height .5s ease;
+}
+
+.project-preview img {
+  width: 100%;
+  height: auto; 
+  display: block;
+}
+
+.project-card:hover .project-preview {
+  height: 420px;
 }
 
 /* ================= MOBILE ================= */
